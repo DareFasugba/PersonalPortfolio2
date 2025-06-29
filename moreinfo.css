@@ -19,7 +19,8 @@ body {
     background-size: cover;
     background-attachment: fixed;
     background-position: center;
-    overflow: auto;
+    overflow-x: hidden;
+    overflow-y: auto;
 }
   ul {
     list-style-type: none;
@@ -45,3 +46,74 @@ body {
   .active {
     color: rgb(219, 153, 113);
   }
+.title {
+    margin-top: 36vh;
+    text-align: left;
+    margin-left: 4vh;
+    font-family: "Chewy", system-ui;
+    font-size: 7vh;
+    font-weight: bold;
+    text-shadow: rgb(179, 139, 214) 0.4vw 0.4vw 0.4vw;
+}
+.titlep {
+    margin-top: -7vh;
+    text-align: left;
+    margin-left: 4vh;
+    font-family: "Chewy", system-ui;
+    font-size: 3.5vh;
+    text-shadow: rgb(179, 139, 214) 0.1vw 0.1vw 0.4vw;
+}
+.portfolioimage1 {
+    display:inline-block;
+    margin-left: 30vh;
+    scale: 0.4;
+    margin-top: -70vh;
+    border-radius: 6vh;
+}
+.portfolioimage2 {
+    display:inline-block;
+    margin-left: 30vh;
+    scale: 0.4;
+    margin-top: -50vh;
+    border-radius: 6vh;
+}
+.portfolioimage3 {
+    display:inline-block;
+    margin-left: 75vh;
+    scale: 0.25;
+    margin-top: -205vh;
+    border-radius: 6vh;
+}
+.portfolioinfo {
+    opacity: 1.0;
+    display: block;
+    font-family: "Chewy", system-ui;
+    font-size: 3.0vh;
+    color: black;
+    text-align: left;
+    margin-left: 53vh;
+    margin-top: -80vh;
+    translate: -5vh 5vh;
+}
+.portfolioicon {
+    opacity: 1.0;
+    display: inline-block;
+    translate: 0vh 5vh;
+    scale: 0.45;
+    margin-left: 10vh;
+    margin-top: -35vh;
+    width: 3vh;
+    height: 3vh;
+}
+.portfolioentry {
+    background: white;
+    height: 50vh;
+    opacity: 0.6;
+    border-radius: 10vh;
+}
+.chewy-regular {
+    font-family: "Chewy", system-ui;
+    font-weight: 400;
+    font-style: normal;
+  }
+  

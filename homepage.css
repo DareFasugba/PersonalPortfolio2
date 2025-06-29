@@ -38,7 +38,8 @@ h1 {
     background-size: cover;
     background-attachment: fixed;
     background-position: center;
-    overflow: auto;
+    overflow-x: hidden;
+    overflow-y: auto;
   }
   ul {
     list-style-type: none;
