@@ -15,7 +15,10 @@ li {
   }
 body {
     color: white;
-    background-image: url("https://wallpapercave.com/wp/wp6248666.jpg");
+    background: linear-gradient(
+        rgba(0, 0, 0, 0.2), 
+        rgba(0, 0, 0, 0.2)
+      ), url("myassets/R (2).jpeg");
     background-size: cover;
     background-attachment: fixed;
     background-position: center;
@@ -46,5 +49,3 @@ body {
   .active {
     color: rgb(219, 153, 113);
   }
-.title {
-    margin-top: 36v
