@@ -1,7 +1,44 @@
-li {
-    display: inline;
-    border-right: 0.2vw solid white; /* Adjust border size relative to viewport width */
+/* Base styles */
+body {
+    color: white;
+    background: linear-gradient(
+      rgba(0, 0, 0, 0.2),
+      rgba(0, 0, 0, 0.2)
+    ), url("myassets/R (2).jpeg");
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    overflow-x: hidden;
+    overflow-y: auto;
+    margin: 0;
+    padding: 0;
   }
+  
+  /* Navigation */
+  .navbar {
+    display: flex;
+    margin: 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 9999;
+    width: 100%;
+    height: 10vh; /* Adjust height relative to viewport height */
+  }
+  
+  ul {
+    list-style-type: none;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0
+  }
+  
+  li {
+    display: inline;
+    border-right: 0.2vw solid white;
+  }
+  
   li a {
     display: inline-block;
     color: white;
@@ -13,39 +50,178 @@ li {
     font-weight: bold;
     margin-top: 0;
   }
-body {
-    color: white;
-    background: linear-gradient(
-        rgba(0, 0, 0, 0.2), 
-        rgba(0, 0, 0, 0.2)
-      ), url("myassets/R (2).jpeg");
-    background-size: cover;
-    background-attachment: fixed;
-    background-position: center;
-    overflow-x: hidden;
-    overflow-y: auto;
-}
-  ul {
-    list-style-type: none;
-    margin-left: auto;
-    margin-right: auto;
-    padding: 0;
-  }
-  .navbar {
-    display: flex;
-    margin: 0;
-    overflow: hidden;
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    z-index: 9999;
-    width: 100%;
-    height: 10vh; /* Adjust height relative to viewport height */
-  }
+  
   li a:hover {
     color: rgb(219, 153, 113);
   }
+  
   .active {
     color: rgb(219, 153, 113);
   }
+  
+  /* Typography */
+  .title {
+    margin-top: 12vh;
+    text-align: center;
+    font-family: "Chewy", system-ui;
+    font-size: clamp(3rem, 5vh, 6rem);
+    font-weight: bold;
+    text-shadow: rgb(53, 51, 54) 0.4vw 0.4vw 0.4vw;
+    padding: 0 1rem;
+  }
+  
+  .titlep {
+    margin-top: -1vh;
+    text-align: center;
+    font-family: "Chewy", system-ui;
+    font-size: clamp(2rem, 3.5vh, 4rem);
+    text-shadow: rgb(53, 51, 54) 0.1vw 0.1vw 0.4vw;
+    padding: 0 1rem;
+  }
+  
+  .chewy-regular {
+    font-family: "Chewy", system-ui;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+  /* Load Section */
+  .loadsection {
+    display: block;
+    background: rgba(255, 255, 255, 0.6);
+    min-height: 60vh;
+    position: relative;
+    padding: 2rem 1rem;
+    margin: 2rem 0;
+    border-radius: 1rem;
+    margin-left: 1rem;
+    margin-right: 1rem;
+  }
+  
+  .loadvideo {
+    display: block;
+    width: 100%;
+    max-width: 800px;
+    height: auto;
+    aspect-ratio: 16/9;
+    border-radius: 1rem;
+    margin: 2rem auto;
+    position: relative;
+  }
+  
+  .loadvideo:fullscreen {
+    border-radius: 0;
+    margin: 0;
+    width: 100vw;
+    height: 100vh;
+  }
+  
+  .loadlogo {
+    display: block;
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+    border-radius: 1rem;
+    margin: 2rem auto;
+  }
+  
+  .loadlabel {
+    font-family: "Chewy", system-ui;
+    font-weight: bold;
+    font-size: clamp(3rem, 8vw, 8rem);
+    text-align: center;
+    color: white;
+    text-shadow: rgb(0, 0, 0) 0.3vw 0.3vw 0.4vw;
+    margin: 2rem 0;
+    padding: 0 1rem;
+  }
+  
+  /* Links */
+  .applelink, .playlink {
+    display: block;
+    color: white;
+    text-align: center;
+    height: auto;
+    font-family: "Chewy", system-ui;
+    font-size: clamp(1rem, 2vw, 1.5rem);
+    padding: 1rem 2rem;
+    text-decoration: none;
+    cursor: pointer;
+    border-radius: 2rem;
+    margin: 0.5rem;
+    
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .applelink {
+    background-color: rgb(79, 177, 216);
+  }
+  
+  .playlink {
+    background-color: rgb(79, 216, 118);
+  }
+  
+  .applelink:hover, .playlink:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  }
+  
+  .githublink {
+    display: block;
+    background-color: rgb(255, 255, 255);
+    color: black;
+    text-align: center;
+    font-family: "Chewy", system-ui;
+    font-size: clamp(1rem, 2vw, 1.5rem);
+    padding: 1rem 2rem;
+    text-decoration: none;
+    cursor: pointer;
+    border-radius: 2rem;
+    margin: 0.5rem;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .githublink:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  }
+  
+  /* GitHub Section */
+  .githubsection {
+    display: block;
+    background: rgba(255, 255, 255, 0.6);
+    min-height: 60vh;
+    position: relative;
+    margin: 2rem 1rem;
+    padding: 2rem 1rem;
+    border-radius: 1rem;
+  }
+  
+  .githublabel {
+    font-family: "Chewy", system-ui;
+    font-weight: bold;
+    font-size: clamp(3rem, 8vw, 8rem);
+    text-align: center;
+    color: white;
+    text-shadow: rgb(0, 0, 0) 0.3vw 0.3vw 0.4vw;
+    margin: 2rem 0;
+    padding: 0 1rem;
+  }
+  
+  .githubicon {
+    display: block;
+    width: 100%;
+    max-width: 200px;
+    height: auto;
+    margin: 2rem auto;
+  }
+  
+  /* Link containers */
+  .link-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+    margin: 2rem 0;
+  }
+  

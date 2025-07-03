@@ -1,0 +1,97 @@
+/* Base styles */
+body {
+    color: white;
+    background: linear-gradient(
+      rgba(0, 0, 0, 0.2),
+      rgba(0, 0, 0, 0.2)
+    ), url("myassets/clear-sky-with-blue-sea_1232-422.jpg");
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    overflow-x: hidden;
+    overflow-y: auto;
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+  }
+  
+  /* Navigation */
+  .navbar {
+    display: flex;
+    margin: 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 9999;
+    width: 100%;
+    height: 10vh;
+  }
+  
+  ul {
+    list-style-type: none;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0;
+  }
+  
+  li {
+    display: inline;
+    border-right: 0.2vw solid white;
+  }
+  
+  li a {
+    display: inline-block;
+    color: white;
+    text-align: center;
+    margin: 2vw;
+    padding: 1.0vw 1.2vw;
+    text-decoration: none;
+    font-family: sans-serif;
+    font-weight: bold;
+    margin-top: 0;
+  }
+  
+  li a:hover {
+    color: rgb(219, 153, 113);
+  }
+  
+  .active {
+    color: rgb(219, 153, 113);
+  }
+  
+  /* Typography */
+  .mystorytitle {
+    margin-top: 35vh;
+    text-align: left;
+    font-family: "Chewy", system-ui;
+    font-size: clamp(4rem, 8vh, 9rem);
+    font-weight: bold;
+    text-shadow: rgb(53, 51, 54) 0.4vw 0.4vw 0.4vw;
+    padding: 0 1rem;
+  }
+  
+  .titlep {
+    margin-top: -30vh;
+    text-align: left;
+    font-family: "Chewy", system-ui;
+    font-size: clamp(0.9rem, 2.0vh, 2rem);
+    text-shadow: rgb(53, 51, 54) 0.1vw 0.1vw 0.4vw;
+    padding: 0 1rem;
+    padding-left: 30rem;
+    padding-right: 8rem;
+  }
+  
+  .titlep:hover, .title:hover {
+    color: rgb(119, 191, 218);
+    text-shadow: rgb(53, 51, 54) 0.1vw 0.1vw 0.4vw;
+    transition: 1.8s ease-in-out;
+    cursor: pointer;
+  }
+  
+  .chewy-regular {
+    font-family: "Chewy", system-ui;
+    font-weight: 400;
+    font-style: normal;
+  }
+  

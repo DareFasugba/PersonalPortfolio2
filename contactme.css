@@ -1,0 +1,124 @@
+/* Base styles */
+body {
+    color: white;
+    background: linear-gradient(
+      rgba(0, 0, 0, 0.2),
+      rgba(0, 0, 0, 0.2)
+    ), url("https://wallpaperaccess.com/full/2065354.jpg");
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    overflow-x: hidden;
+    overflow-y: auto;
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* Navigation */
+  .navbar {
+    display: flex;
+    margin: 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 9999;
+    width: 100%;
+    height: 10vh; /* Adjust height relative to viewport height */
+  }
+  
+  ul {
+    list-style-type: none;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0
+  }
+  
+  li {
+    display: inline;
+    border-right: 0.2vw solid white;
+  }
+  
+  li a {
+    display: inline-block;
+    color: white;
+    text-align: center;
+    margin: 2vw; /* Adjust margin relative to viewport width */
+    padding: 1.0vw 1.2vw; /* Adjust padding relative to viewport width */
+    text-decoration: none;
+    font-family: sans-serif;
+    font-weight: bold;
+    margin-top: 0;
+  }
+  
+  li a:hover {
+    color: rgb(219, 153, 113);
+  }
+  
+  .active {
+    color: rgb(219, 153, 113);
+  }
+  
+  /* Typography */
+  .title {
+    margin-top: 12vh;
+    text-align: center;
+    font-family: "Chewy", system-ui;
+    font-size: clamp(3rem, 5vh, 6rem);
+    font-weight: bold;
+    text-shadow: rgb(53, 51, 54) 0.4vw 0.4vw 0.4vw;
+    padding: 0 1rem;
+  }
+  
+  .titlep {
+    margin-top: -6vh;
+    text-align: center;
+    font-family: "Chewy", system-ui;
+    font-size: clamp(2rem, 3.5vh, 4rem);
+    text-shadow: rgb(53, 51, 54) 0.1vw 0.1vw 0.4vw;
+    padding: 0 1rem;
+  }
+  
+  .chewy-regular {
+    font-family: "Chewy", system-ui;
+    font-weight: 400;
+    font-style: normal;
+  }
+
+  .contactform {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem;
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 4px;
+    width: 90vw;
+    max-width: 600px;
+    margin: 0 auto;
+    text-align: center;
+    box-sizing: border-box;
+    position: relative;
+  }
+
+  /* Social icons responsive adjustments */
+  .igicon, .ghicon {
+    translate: 0;
+    width: 4vw;
+    height: 4vw;
+    min-width: 40px;
+    min-height: 40px;
+    max-width: 60px;
+    max-height: 60px;
+    margin: 0 auto;
+    display: block;
+  }
+  .ghicon {
+    scale: 0.8;
+  }
+  .social-icons-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.25rem;
+  }

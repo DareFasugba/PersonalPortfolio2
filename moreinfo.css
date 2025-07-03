@@ -31,7 +31,6 @@ body {
   .navbar {
     display: flex;
     margin: 0;
-    overflow: hidden;
     position: fixed;
     top: 0;
     left: 0;
@@ -47,4 +46,80 @@ body {
     color: rgb(219, 153, 113);
   }
 .title {
-    margin-top: 36v
+    margin-top: 6vh;
+    text-align: center;
+    margin-left: 4vh;
+    font-family: "Chewy", system-ui;
+    font-size: 7vh;
+    font-weight: bold;
+    text-shadow: rgb(179, 139, 214) 0.4vw 0.4vw 0.4vw;
+}
+.titlep {
+    margin-top: -7vh;
+    text-align: center;
+    margin-left: 4vh;
+    font-family: "Chewy", system-ui;
+    font-size: 3.5vh;
+    text-shadow: rgb(179, 139, 214) 0.1vw 0.1vw 0.4vw;
+}
+.portfolioimages {
+    display: grid;
+    gap: 2rem;
+    padding: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.portfolioimage1,
+.portfolioimage2 {
+    width: 100%;
+    height: auto;
+    border-radius: 2vw;
+    object-fit: cover;
+    transition: transform 1.0s ease;
+}
+
+.portfolioimage1:hover,
+.portfolioimage2:hover,
+.portfolioimage3:hover {
+    transform: scale(1.1);
+}
+.portfolioinfo {
+    opacity: 1.0;
+    display: block;
+    font-family: "Chewy", system-ui;
+    font-size: 3.0vh;
+    color: black;
+    text-align: left;
+    margin-left: 53vh;
+    margin-top: 0vh;
+    translate: -5vh 5vh;
+}
+.portfolioicon {
+    display: inline-block;
+    width: 40%;
+    max-width: 200px;
+    height: auto;
+    transform: translateY(-44vh); /* Replace translate with transform */
+    opacity: 1;
+    position: relative;
+    margin: 5rem;
+}
+
+.portfolioicon img {
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+}
+.portfolioentry {
+    display: block;
+    background: rgba(255, 255, 255, 0.7);
+    height: 50vh;
+    border-radius: 10vh;
+}
+.chewy-regular {
+    font-family: "Chewy", system-ui;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
